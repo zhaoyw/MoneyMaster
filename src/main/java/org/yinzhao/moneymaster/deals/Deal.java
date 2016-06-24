@@ -1,8 +1,6 @@
 package org.yinzhao.moneymaster.deals;
 
-import org.hibernate.annotations.*;
-import org.hibernate.annotations.CascadeType;
-import org.sqlite.core.DB;
+import org.hibernate.annotations.GenericGenerator;
 import org.yinzhao.moneymaster.accounts.Account;
 import org.yinzhao.moneymaster.category.DealCategory;
 import org.yinzhao.moneymaster.enums.DealType;
@@ -12,7 +10,6 @@ import org.yinzhao.moneymaster.utils.BalanceCaculator;
 import org.yinzhao.moneymaster.utils.DBUtil;
 
 import javax.persistence.*;
-import javax.persistence.Entity;
 import java.math.BigDecimal;
 import java.util.Date;
 

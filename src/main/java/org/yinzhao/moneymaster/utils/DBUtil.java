@@ -18,9 +18,6 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by zhaoyongwang on 16/5/28.
- */
 public final class DBUtil {
 
     private static SessionFactory sessionFactory;

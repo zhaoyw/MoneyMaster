@@ -2,9 +2,6 @@ package org.yinzhao.moneymaster.utils;
 
 import java.awt.*;
 
-/**
- * Created by zhaoyongwang on 16/5/28.
- */
 public final class UIToolKit {
     private UIToolKit() {
     }

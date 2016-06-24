@@ -8,9 +8,6 @@ import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by zhaoyongwang on 16/5/29.
- */
 public class DealManager {
     private List<Deal> dealList = new ArrayList<Deal>();
     private List<IDealChangeListener> listeners = new ArrayList<IDealChangeListener>();
