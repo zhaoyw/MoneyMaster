@@ -24,9 +24,6 @@ import java.text.ParseException;
 import java.util.Calendar;
 import java.util.Vector;
 
-/**
- * Created by zhaoyongwang on 16/5/29.
- */
 public class DealDialog extends JDialog {
     private final AccountManager accountManager;
     private final CategoryManager categoryManager;

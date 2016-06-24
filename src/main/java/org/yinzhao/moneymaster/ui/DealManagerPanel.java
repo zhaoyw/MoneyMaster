@@ -16,9 +16,6 @@ import java.awt.event.ActionListener;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by zhaoyongwang on 16/5/29.
- */
 public class DealManagerPanel extends JPanel implements IDealChangeListener {
     private final DealManager dealManager;
     private final AccountManager accountManager;

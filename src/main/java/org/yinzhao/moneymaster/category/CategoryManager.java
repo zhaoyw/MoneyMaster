@@ -8,9 +8,6 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by zhaoyongwang on 16/5/29.
- */
 public class CategoryManager {
     private List<DealCategory> categoryList = new ArrayList<DealCategory>();
     private List<ICategoryChangeListener> listeners = new ArrayList<ICategoryChangeListener>();

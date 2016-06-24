@@ -13,9 +13,6 @@ import java.awt.event.ActionListener;
 import java.math.BigDecimal;
 import java.text.NumberFormat;
 
-/**
- * Created by zhaoyongwang on 16/5/28.
- */
 public class TAccountDialog extends JDialog {
 
     public static final int DEFAULT_TXTFLD_WIDTH = 100;

@@ -6,9 +6,6 @@ import org.yinzhao.moneymaster.enums.EvtType;
 
 import java.math.BigDecimal;
 
-/**
- * Created by zhaoyongwang on 16/6/23.
- */
 public class BalanceCaculator {
     public static BigDecimal calBalance(BigDecimal curBalance, Deal deal, EvtType type) {
         if (curBalance != null && deal != null && type != null) {

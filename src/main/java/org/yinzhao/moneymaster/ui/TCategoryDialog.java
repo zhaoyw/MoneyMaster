@@ -11,9 +11,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Created by zhaoyongwang on 16/5/29.
- */
 public class TCategoryDialog extends JDialog {
     public TCategoryDialog(Window parent) {
         super(parent);

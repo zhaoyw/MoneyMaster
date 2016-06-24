@@ -7,9 +7,6 @@ import org.yinzhao.moneymaster.utils.DBUtil;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
- * Created by zhaoyongwang on 16/5/28.
- */
 public class AccountManager {
     private List<Account> accountList = new ArrayList<Account>();
     private List<IAccountChangeListener> listeners = new ArrayList<IAccountChangeListener>();

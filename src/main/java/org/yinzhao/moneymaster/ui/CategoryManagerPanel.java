@@ -12,9 +12,6 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-/**
- * Created by zhaoyongwang on 16/5/29.
- */
 public class CategoryManagerPanel extends JPanel implements ICategoryChangeListener {
     private CategoryManager categoryManager;
     private JTable categoryTable;
