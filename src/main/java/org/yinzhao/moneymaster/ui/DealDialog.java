@@ -148,7 +148,8 @@ public class DealDialog extends JDialog {
                 deal = new Deal(new Date(((java.util.Date) dateSpinner.getValue()).getTime()),
                         account, type,
                         (DealCategory) categoryBox.getSelectedItem(), detailFld.getText(),
-                        amount, -1, BalanceCaculator.calBalance(account.getBalance(), type, amount), null);
+                        amount, -1, BalanceCaculator.calBalance(account.getAccountType(), account.getBalance(), type,
+                        amount), null);
                 accountManager.updateBalance(deal, EvtType.ADD);
                 returnMode = DialogReturnMode.RETURN_OK;
                 dispose();

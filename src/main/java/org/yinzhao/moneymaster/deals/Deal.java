@@ -150,7 +150,7 @@ public class Deal {
     }
 
     public void updateCurBalance(EvtType type, Deal deal) {
-        setCurBalance(BalanceCaculator.calBalance(curBalance, deal, type));
+        setCurBalance(BalanceCaculator.calBalance(account.getAccountType(), curBalance, deal, type));
         DBUtil.updateDeal(this);
     }
 }

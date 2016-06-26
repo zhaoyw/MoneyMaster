@@ -89,7 +89,7 @@ public class Account {
     }
 
     public void updateBalanceByDeal(Deal deal, EvtType type) {
-        setBalance(BalanceCaculator.calBalance(balance, deal, type));
+        setBalance(BalanceCaculator.calBalance(accountType, balance, deal, type));
         DBUtil.updateAccount(this);
     }
 }

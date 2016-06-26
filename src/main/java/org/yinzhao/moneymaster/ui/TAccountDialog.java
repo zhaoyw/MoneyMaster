@@ -12,11 +12,14 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.math.BigDecimal;
 import java.text.NumberFormat;
+import java.text.ParseException;
 
 public class TAccountDialog extends JDialog {
 
     public static final int DEFAULT_TXTFLD_WIDTH = 100;
     public static final int DEFAULT_TXTFLD_HEIGHT = 25;
+
+    private NumberFormat format;
 
     public TAccountDialog(Window parent) {
         super(parent);
@@ -40,7 +43,7 @@ public class TAccountDialog extends JDialog {
 
         add(new JLabel("Balance"), new GridBagConstraints(0, 2, 1, 1, 0.0d, 0.0d, GridBagConstraints.WEST,
                 GridBagConstraints.NONE, new Insets(6, 6, 6, 6), 0, 0));
-        NumberFormat format = NumberFormat.getNumberInstance();
+        format = NumberFormat.getNumberInstance();
         format.setMaximumFractionDigits(2);
         banlanceFld = new JFormattedTextField(format);
         banlanceFld.setPreferredSize(new Dimension(DEFAULT_TXTFLD_WIDTH, DEFAULT_TXTFLD_HEIGHT));
@@ -98,12 +101,13 @@ public class TAccountDialog extends JDialog {
     }
 
     private BigDecimal getBalance() {
-        String balanceStr = banlanceFld.getText();
-        if (StringUtil.nullOrEmptyString(balanceStr)) {
-            return new BigDecimal(0);
-        } else {
-            return new BigDecimal(balanceStr);
+        BigDecimal balance = new BigDecimal("0.00");
+        try {
+            balance = new BigDecimal(format.parseObject(banlanceFld.getText()).toString());
+        } catch (ParseException e1) {
+            e1.printStackTrace();
         }
+        return balance;
     }
 
     public DialogReturnMode getReturnMode() {
